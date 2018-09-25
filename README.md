@@ -6,7 +6,7 @@ APEX 18.1+  Region Plugin for converting [Markdown](https://en.wikipedia.org/wik
  - easily customizable with JavaScript Initialization Code attribute
 
 # Changelog
-  - v1.0.0 20180924 - Initial Releas
+  - v1.0.0 20180924 - Initial Release
 
 # Install
   - Import plugin file region_type_plugin_com_apexbyg_blogspot_markdownregion.sql from source directory
@@ -15,7 +15,7 @@ APEX 18.1+  Region Plugin for converting [Markdown](https://en.wikipedia.org/wik
 
 # Settings
 
-You can customize region with additional parameters by using Initialization Code attribute. Additional options are available here [https://github.com/showdownjs/showdown/wiki/Showdown-options](https://github.com/showdownjs/showdown/wiki/Showdown-options).
+You can customize region with additional parameters by using Initialization Code attribute. Additional options are available here: [https://github.com/showdownjs/showdown/wiki/Showdown-options](https://github.com/showdownjs/showdown/wiki/Showdown-options).
 
 Example of Initialization Code attribute:
 ```javascript
