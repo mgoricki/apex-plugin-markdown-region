@@ -44,6 +44,16 @@
           vMarkdownWrapper$ = vRegionId$.find('.markdown-region-wrapper'),
           vText = vMarkdownWrapper$.html(),
           vHtml = vConverter.makeHtml(vText);
+
+    // get HTML dynamically   
+    /* 
+    apex.server.plugin (uiw.options.ajaxId, {}, {
+      success: function(pData) {
+        console.log(pData);
+      }
+    });
+    */  
+
       vMarkdownWrapper$.html(vHtml);    
       vMarkdownWrapper$.show();    
             

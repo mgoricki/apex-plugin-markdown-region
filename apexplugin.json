@@ -1,0 +1,37 @@
+{
+  "name" : "Markdown Region Plugin",
+  "version" : "1.0.0",
+  "description" : "APEX 18.1+ Region Plugin for converting Markdown static source to the HTML.",
+  "keywords" : ["region type plugin", "markdown", "ShowdownJS"],
+  "homepage" : "https://github.com/mgoricki/apex-plugin-markdown-region",
+  "bugs" : {
+    "url" : "https://github.com/mgoricki/apex-plugin-markdown-region/issues",
+    "email" : "mgoricki8@gmail.com"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Marko Goricki",
+    "email" : "mgoricki8@gmail.com",
+    "url" : "http://apexbyg.blogspot.com",
+    "twitter" : "mgoricki",
+    "donationUrl" : "https://www.paypal.me/mgoricki"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mgoricki/apex-plugin-markdown-region"
+  },
+  "oracle" : {
+    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "apex" : {
+      "versions" : ["18.1.0.00.45"],
+      "plugin" : {
+        "internalName" : "COM.APEXBYG.BLOGSPOT.MARKDOWNREGION",
+        "type" : "region",
+        "demo" : "https://apex.oracle.com/pls/apex/f?p=apexbyg:markdownregion",
+        "previewImage" : "https://raw.githubusercontent.com/mgoricki/apex-plugin-markdown-region/master/preview01.gif"
+
+
+      }
+    }
+  }
+}

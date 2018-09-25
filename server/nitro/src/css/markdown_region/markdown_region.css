@@ -1,0 +1,5 @@
+.markdown-region-wrapper > pre{
+  padding: 10px;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}

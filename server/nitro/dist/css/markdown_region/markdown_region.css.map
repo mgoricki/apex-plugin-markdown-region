@@ -1,0 +1,1 @@
+{"version":3,"sources":["markdown_region/markdown_region.css"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,0BAA0B;EAC1B,mBAAmB;CACpB","file":"markdown_region.css","sourcesContent":[".markdown-region-wrapper > pre{\n  padding: 10px;\n  background-color: #f6f8fa;\n  border-radius: 3px;\n}"]}
