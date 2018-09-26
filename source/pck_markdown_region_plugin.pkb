@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Tuesday-September-25-2018   
+--  File created - Wednesday-September-26-2018   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Package Body PCK_MARKDOWN_REGION_PLUGIN
@@ -26,9 +26,9 @@
                 
     -- by default HTML is escaped            
     if p_region.escape_output then                                     
-      sys.htp.prn('<div class="markdown-region-wrapper" style="display:none">'||apex_escape.html(p_region.source)||'</div>');
+      sys.htp.prn('<div class="markdown-region-wrapper" style="display:none">'||apex_escape.html(apex_plugin_util.replace_substitutions(p_region.source, true))||'</div>');
     else
-      sys.htp.prn('<div class="markdown-region-wrapper" style="display:none">'||p_region.source||'</div>');
+      sys.htp.prn('<div class="markdown-region-wrapper" style="display:none">'||apex_plugin_util.replace_substitutions(p_region.source, false)||'</div>');
     end if;
     
     -- add JS files

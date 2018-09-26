@@ -1,6 +1,6 @@
 {
   "name" : "Markdown Region Plugin",
-  "version" : "1.0.0",
+  "version" : "1.0.1",
   "description" : "APEX 18.1+ Region Plugin for converting Markdown static source to the HTML.",
   "keywords" : ["region type plugin", "markdown", "ShowdownJS"],
   "homepage" : "https://github.com/mgoricki/apex-plugin-markdown-region",

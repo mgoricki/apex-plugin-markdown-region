@@ -7,6 +7,7 @@ APEX 18.1+  Region Plugin for converting [Markdown](https://en.wikipedia.org/wik
 
 # Changelog
   - v1.0.0 20180924 - Initial Release
+  - v1.0.1 20180926 - Support for &ITEM. substitution
 
 # Install
   - Import plugin file region_type_plugin_com_apexbyg_blogspot_markdownregion.sql from source directory

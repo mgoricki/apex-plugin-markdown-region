@@ -49,9 +49,9 @@ wwv_flow_api.create_plugin(
 '                ',
 '    -- by default HTML is escaped            ',
 '    if p_region.escape_output then                                     ',
-'      sys.htp.prn(''<div class="markdown-region-wrapper" style="display:none">''||apex_escape.html(p_region.source)||''</div>'');',
+'      sys.htp.prn(''<div class="markdown-region-wrapper" style="display:none">''||apex_escape.html(apex_plugin_util.replace_substitutions(p_region.source, true))||''</div>'');',
 '    else',
-'      sys.htp.prn(''<div class="markdown-region-wrapper" style="display:none">''||p_region.source||''</div>'');',
+'      sys.htp.prn(''<div class="markdown-region-wrapper" style="display:none">''||apex_plugin_util.replace_substitutions(p_region.source, false)||''</div>'');',
 '    end if;',
 '    ',
 '    -- add JS files',
@@ -98,7 +98,7 @@ wwv_flow_api.create_plugin(
 ,p_substitute_attributes=>true
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>'More info on https://github.com/mgoricki/apex-plugin-markdown-region'
-,p_version_identifier=>'1.0.0'
+,p_version_identifier=>'1.0.1'
 ,p_about_url=>'https://apex.oracle.com/pls/apex/f?p=apexbyg:markdownregion'
 ,p_files_version=>34
 );
